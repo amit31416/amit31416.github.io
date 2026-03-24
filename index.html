@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kumar Kundu | PhD Researcher at UMD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .nav-link.active { border-bottom: 2px solid #e11d48; color: #e11d48; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <header class="bg-white border-b sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div>
+                <h1 class="text-3xl font-bold">Amit Kumar Kundu [cite: 1]</h1>
+                <p class="text-lg text-gray-600">PhD Researcher in AI & Deep Learning [cite: 4]</p>
+                <p class="text-sm text-gray-500">University of Maryland, College Park [cite: 4]</p>
+            </div>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="mailto:amit314@umd.edu" class="hover:text-red-600"><i class="fas fa-envelope fa-lg"></i></a>
+                <a href="#" class="hover:text-red-600"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="hover:text-red-600"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="hover:text-red-600"><i class="fas fa-graduation-cap fa-lg"></i></a>
+            </div>
+        </div>
+        
+        <nav class="max-w-5xl mx-auto px-4 flex overflow-x-auto space-x-6 text-sm font-medium">
+            <button onclick="openTab(event, 'About')" class="nav-link py-3 px-1 active">About</button>
+            <button onclick="openTab(event, 'Research')" class="nav-link py-3 px-1">Research & Projects</button>
+            <button onclick="openTab(event, 'Publications')" class="nav-link py-3 px-1">Publications</button>
+            <button onclick="openTab(event, 'News')" class="nav-link py-3 px-1">News</button>
+            <button onclick="openTab(event, 'Experience')" class="nav-link py-3 px-1">Experience</button>
+            <button onclick="openTab(event, 'Awards')" class="nav-link py-3 px-1">Awards & Recognitions</button>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-10">
+
+        <section id="About" class="tab-content active animate-fade-in">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl font-bold mb-4">Biography</h2>
+                    <p class="mb-4 text-gray-700 leading-relaxed">
+                        I am a dedicated researcher with 8 years of experience in comprehending inner principles of representation learning in AI and addressing problems faced under changing environments[cite: 4]. Currently, I am a Doctoral Researcher at the University of Maryland, College Park[cite: 4].
+                    </p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">
+                        My core interest is to develop methods for preparing AI models for dynamic environments for scalable and long-term applications, specifically within healthcare and fundamental machine learning[cite: 4].
+                    </p>
+                    <h3 class="font-bold text-lg mt-6 mb-2">Technical Skills [cite: 6]</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Python</span>
+                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">PyTorch</span>
+                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">TensorFlow</span>
+                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Computer Vision</span>
+                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">C</span>
+                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">SQL</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border h-fit">
+                    <h3 class="font-bold mb-3">Education [cite: 4]</h3>
+                    <ul class="text-sm space-y-3">
+                        <li><strong>PhD in Electrical & Computer Engineering</strong><br>UMD, College Park (Ongoing)</li>
+                        <li><strong>MS in Electrical & Computer Engineering</strong><br>UMD, College Park (2025)</li>
+                        <li><strong>B.Sc. in EEE</strong><br>BUET, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="Research" class="tab-content">
+            <h2 class="text-2xl font-bold mb-6">Research Projects</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-red-600 pl-4">
+                    <h3 class="text-xl font-bold">Temperature Modulated Representation Learning [cite: 4]</h3>
+                    <p class="text-gray-600 text-sm mb-2">Fall '23 - Summer '25</p>
+                    <p>Developed a novel modulation scheme to boost open set recognition (OSR) performance, improving closed set accuracy by 1.87% and AUROC by 3.3%[cite: 4].</p>
+                </div>
+                <div class="border-l-4 border-gray-300 pl-4">
+                    <h3 class="text-xl font-bold">AI for Mammography Screening Recall [cite: 4]</h3>
+                    <p class="text-gray-600 text-sm mb-2">Spring '24 - Fall '25</p>
+                    <p>Analyzed AI performance biases across demographic groups and implemented monitoring systems for clinical breast cancer detection[cite: 4].</p>
+                </div>
+                <div class="border-l-4 border-gray-300 pl-4">
+                    <h3 class="text-xl font-bold">FedNet2Net: Model Growing in Federated Learning [cite: 4]</h3>
+                    <p class="text-gray-600 text-sm mb-2">Spring '20 - Spring '22</p>
+                    <p>Developed efficient switching schemes to enlarge model capacity while reducing communication and computational costs for local clients[cite: 4].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Publications" class="tab-content">
+            <h2 class="text-2xl font-bold mb-6">Selected Publications [cite: 5]</h2>
+            <ul class="space-y-6">
+                <li class="bg-white p-4 rounded border shadow-sm">
+                    <span class="text-red-600 font-bold text-xs uppercase">ICLR 2026</span>
+                    <p class="mt-1"><strong>Boosting open set recognition performance through modulated representation learning.</strong> [cite: 14]</p>
+                    <p class="text-sm text-gray-600">A. K. Kundu, V. Patil, & J. Jaja [cite: 14]</p>
+                    <div class="mt-2 text-sm text-blue-600"><a href="#">[Paper]</a> <a href="#">[Code]</a></div>
+                </li>
+                <li class="bg-white p-4 rounded border shadow-sm">
+                    <span class="text-red-600 font-bold text-xs uppercase">ICLR 2026</span>
+                    <p class="mt-1"><strong>A bayesian non-parametric framework for learning disentangled representations.</strong> [cite: 16, 17]</p>
+                    <p class="text-sm text-gray-600">V. Patil, S. Patil, M. Evanusa, A. K. Kundu, et al. [cite: 16]</p>
+                </li>
+                <li class="bg-white p-4 rounded border shadow-sm">
+                    <span class="text-gray-500 font-bold text-xs uppercase">IEEE Access 2020</span>
+                    <p class="mt-1"><strong>Least square saliency transformation of capsule endoscopy images...</strong> [cite: 26, 27]</p>
+                    <p class="text-sm text-gray-600">A. K. Kundu, S. A. Fattah, & K. A. Wahid [cite: 26]</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="News" class="tab-content">
+            <h2 class="text-2xl font-bold mb-6">Latest Updates</h2>
+            <ul class="space-y-4">
+                <li class="flex gap-4">
+                    <span class="font-bold text-gray-400">Feb 2026</span>
+                    <span>Two papers accepted at <strong>ICLR 2026</strong> in Rio de Janeiro! </span>
+                </li>
+                <li class="flex gap-4">
+                    <span class="font-bold text-gray-400">Fall 2025</span>
+                    <span>Completed Master of Science in ECE at University of Maryland[cite: 4].</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Experience" class="tab-content">
+            <h2 class="text-2xl font-bold mb-6">Professional Experience [cite: 4]</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-lg">Doctoral Researcher</h3>
+                    <p class="text-gray-600">University of Maryland | Fall '19 – Present</p>
+                    <ul class="list-disc ml-5 mt-2 text-gray-700">
+                        <li>Focus on representation learning, OOD detection, and federated learning[cite: 4].</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Graduate Teaching Assistant</h3>
+                    <p class="text-gray-600">University of Maryland | 2020 – 2021</p>
+                    <p class="mt-1">Courses: Foundations of Machine Learning, Statistical Pattern Recognition[cite: 4].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Awards" class="tab-content">
+            <h2 class="text-2xl font-bold mb-6">Awards & Recognitions [cite: 7]</h2>
+            <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                <li>Summer Scholarship, UMD (2022) [cite: 47]</li>
+                <li>Dean's Fellowship, UMD (2019-2020) [cite: 47]</li>
+                <li>Dean's List Award, BUET (2012) [cite: 47]</li>
+                <li>Reviewer for ICANN 2022, 2023 [cite: 51]</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, navlinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            navlinks = document.getElementsByClassName("nav-link");
+            for (i = 0; i < navlinks.length; i++) {
+                navlinks[i].className = navlinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
